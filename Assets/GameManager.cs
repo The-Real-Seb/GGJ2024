@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -23,8 +24,19 @@ public class GameManager : MonoBehaviour
     public void AddReplique()
     {
         nbReplique++;
+        CheckSprite();
     }
-    
+
+    private void Start()
+    {
+        //Arrivée en anim 
+        
+        
+        //DialogueSystem.Instance.BeginGame();
+        CheckSprite();
+    }
+
+
     private void Awake()
     {
         if (instance != null && instance != this)
@@ -42,7 +54,18 @@ public class GameManager : MonoBehaviour
     {
         switch (nbReplique)
         {
-            //case:
+            case 0:
+                currentFace.sprite = disapointedFace;
+                break;
+            case 3:
+                currentFace.sprite = basicFace;
+                break;
+            case 6:
+                currentFace.sprite = smilyFace;
+                break;
+            case 9:
+                currentFace.sprite = happyFace;
+                break;
         }
     }
 }

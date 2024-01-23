@@ -57,7 +57,7 @@ public class DialogueSystem : MonoBehaviour
         }
     }
 
-    private void Start()
+    public void BeginGame()
     {
         LoadReplique(firstReponse);
     }
@@ -96,7 +96,7 @@ public class DialogueSystem : MonoBehaviour
 
     public void GameOver()
     {
-        //Timer.Instance.GameOver();
+        Timer.Instance.GameOver();
     }
 
     void ShowNextReplique()
