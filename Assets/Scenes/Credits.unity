@@ -204,21 +204,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Audio Composition - Sebastien Chevallier
-
-    Audio Design - Bich Louis
-
-    Audio
-    Engineering - Sebastien Chevallier
-
-    Audio Programming - Epitalbra Jules
-
-    Sound
-    Direction - Epitalbra Jules
+  m_text: '<b><size=120><i>CREDITS</i></size></b>
 
 
 
-    <b><u><size=80>Audio</size></u></b>
+
+
+    <b><u><size=80>Game Development</size></u></b>
 
 
 
@@ -250,14 +242,14 @@ MonoBehaviour:
 
 
     <b><u><size=80>Game
-    Development</size></u></b>
+    Design</size></u></b>
 
 
 
     Combat Design - Epitalbra Jules
 
-    Economy
-    Design - Aine--Todeschini Victor
+    Economy Design
+    - Aine--Todeschini Victor
 
     Interaction Design - Sebastien Chevallier
 
@@ -291,7 +283,7 @@ MonoBehaviour:
 
 
 
-    <b><u><size=80>Game Design</size></u></b>
+    <b><u><size=80>Game Production</size></u></b>
 
 
 
@@ -320,7 +312,7 @@ MonoBehaviour:
 
 
 
-    <b><u><size=80>Game Production</size></u></b>
+    <b><u><size=80>Animation</size></u></b>
 
 
 
@@ -348,7 +340,7 @@ MonoBehaviour:
 
 
 
-    <b><u><size=80>Animation</size></u></b>
+    <b><u><size=80>Art</size></u></b>
 
 
 
@@ -393,14 +385,23 @@ MonoBehaviour:
     Art - Sebastien Chevallier
 
 
-    <b><u><size=48>Art</size></u></b>
+
+    <b><u><size=80>Audio</size></u></b>
 
 
 
+    Audio
+    Composition - Sebastien Chevallier
 
+    Audio Design - Bich Louis
 
+    Audio
+    Engineering - Sebastien Chevallier
 
-    <b><size=120><i>CREDITS</i></size></b>'
+    Audio Programming - Epitalbra Jules
+
+    Sound
+    Direction - Epitalbra Jules'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
