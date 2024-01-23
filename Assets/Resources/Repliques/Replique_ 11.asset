@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IdReplique: 11
   text: "\xC0 75 d\xE9cimales pr\xE8s, donnez PI ?"
-  repliqueDuration: 1
-  textSpeed: 1
+  repliqueDuration: 5
+  textSpeed: 2
   image: {fileID: 0}
   ListReponse:
   - {fileID: 11400000, guid: f6d09d51fb74f5c4796cbf2b80cceec8, type: 2}

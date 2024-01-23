@@ -14,4 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IdReplique: 0
   text: 0
+  repliqueDuration: 5
+  textSpeed: 2
+  image: {fileID: 0}
   ListReponse: []

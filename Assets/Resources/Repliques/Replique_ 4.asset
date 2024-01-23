@@ -16,7 +16,7 @@ MonoBehaviour:
   text: "Super !  Tu sais il se trouve que je suis une femme assez exigeante, je
     pense que la personne qui pourra partager ma vie doit \xEAtre quelqu\u2019un
     de cultiv\xE9."
-  repliqueDuration: 2
+  repliqueDuration: 5
   textSpeed: 2
   image: {fileID: 0}
   ListReponse:
