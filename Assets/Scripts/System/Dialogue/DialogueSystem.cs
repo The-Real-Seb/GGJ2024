@@ -69,7 +69,7 @@ public class DialogueSystem : MonoBehaviour
     {
         if (reponse.win)
         {
-            //GameManager.Instance.AddReplique();
+            GameManager.Instance.AddReplique();
             ClearLayout();
             _IdReplique = reponse.replique.IdReplique;
             _replique = reponse.replique;
@@ -85,7 +85,7 @@ public class DialogueSystem : MonoBehaviour
     }
 
     public void GameOver()
-    {
+    {        
         StartCoroutine(Timer.Instance.GameOver());
     }
 
@@ -94,7 +94,8 @@ public class DialogueSystem : MonoBehaviour
         //if (canPass)
         //{
             texteReplique.text = ""; // Effacez le texte existant
-            StopAllCoroutines();
+            //StopAllCoroutines();
+            StopCoroutine(TypeSentence(_replique.text));
             StartCoroutine(TypeSentence(_replique.text));
             LoadReponse();
         //}
