@@ -57,7 +57,7 @@ public class DialogueSystem : MonoBehaviour
         }
     }
 
-    public void BeginGame()
+    public void Start()
     {
         LoadReplique(firstReponse);
     }
@@ -81,10 +81,11 @@ public class DialogueSystem : MonoBehaviour
     {
         if (reponse.win)
         {
-            GameManager.Instance.AddReplique();
+            //GameManager.Instance.AddReplique();
             ClearLayout();
             _IdReplique = reponse.replique.IdReplique;
             _replique = reponse.replique;
+            Timer.Instance.countdown = _replique.repliqueDuration;
             ShowNextReplique();  
         }
         else

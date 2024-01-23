@@ -31,7 +31,7 @@ public class GameManager : MonoBehaviour
     {
         //Arrivée en anim 
         
-        
+        currentFace.sprite = disapointedFace;
         //DialogueSystem.Instance.BeginGame();
         CheckSprite();
     }
@@ -49,12 +49,7 @@ public class GameManager : MonoBehaviour
             instance = this;
         }
     }
-
-    private void Start()
-    {
-        currentFace.sprite = disapointedFace;
-    }
-
+   
     private void CheckSprite()
     {
         switch (nbReplique)
