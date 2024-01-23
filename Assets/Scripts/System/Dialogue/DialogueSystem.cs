@@ -18,15 +18,15 @@ public class DialogueSystem : MonoBehaviour
 
     private bool canPass = false;
     public Replique _replique;
+    private int _IdReplique = 0;
     private List<Replique> _ListReplique = new List<Replique>();
     private static DialogueSystem instance = null;
     public static DialogueSystem Instance => instance;
-    private AudioSource audioSource;
+    public AudioSource audioSource;
 
 
     private void Awake()
     {
-        audioSource = GetComponent<AudioSource>();
         if (instance != null && instance != this)
         {
             Destroy(this.gameObject);
@@ -73,7 +73,7 @@ public class DialogueSystem : MonoBehaviour
             GameManager.Instance.AddReplique();
             SceneAudioPlayer.Instance.AccelerateMusicSpeed();
             ClearLayout();
-            
+            _IdReplique = reponse.replique.IdReplique;
             _replique = reponse.replique;
             Timer.Instance.countdown = _replique.repliqueDuration;
             Timer.Instance.currentTimer = _replique.repliqueDuration;
@@ -98,11 +98,7 @@ public class DialogueSystem : MonoBehaviour
         //{
             texteReplique.text = ""; // Effacez le texte existant
             StopAllCoroutines();
-            //StopCoroutine(TypeSentence(_replique.text));
-            
-            
             StartCoroutine(TypeSentence(_replique.text));
-            
             LoadReponse();
         //}
     }
@@ -111,9 +107,9 @@ public class DialogueSystem : MonoBehaviour
     {
         foreach (char letter in sentence.ToCharArray())
         {
-            audioSource.Play();
-            float newPitch = Mathf.Clamp(audioSource.pitch, 0.9f, 1.1f);
-            audioSource.pitch = newPitch;
+            //audioSource.Play();
+            //float newPitch = Mathf.Clamp(audioSource.pitch, 0.9f, 1.1f);
+            //audioSource.pitch = newPitch;
             texteReplique.text += letter;
             yield return new WaitForSeconds(typingSpeed * 0.05f);
         }
