@@ -18,7 +18,6 @@ public class DialogueSystem : MonoBehaviour
 
     private bool canPass = false;
     public Replique _replique;
-    private int _IdReplique = 0;
     private List<Replique> _ListReplique = new List<Replique>();
     private static DialogueSystem instance = null;
     public static DialogueSystem Instance => instance;
@@ -74,7 +73,7 @@ public class DialogueSystem : MonoBehaviour
             GameManager.Instance.AddReplique();
             SceneAudioPlayer.Instance.AccelerateMusicSpeed();
             ClearLayout();
-            _IdReplique = reponse.replique.IdReplique;
+            
             _replique = reponse.replique;
             Timer.Instance.countdown = _replique.repliqueDuration;
             Timer.Instance.currentTimer = _replique.repliqueDuration;
@@ -98,9 +97,12 @@ public class DialogueSystem : MonoBehaviour
         //if (canPass)
         //{
             texteReplique.text = ""; // Effacez le texte existant
-            //StopAllCoroutines();
-            StopCoroutine(TypeSentence(_replique.text));
+            StopAllCoroutines();
+            //StopCoroutine(TypeSentence(_replique.text));
+            
+            
             StartCoroutine(TypeSentence(_replique.text));
+            
             LoadReponse();
         //}
     }
