@@ -9,10 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5c6ccc74a6dd324899ecf9827e329d5, type: 3}
-  m_Name: Replique_ 4
+  m_Script: {fileID: 11500000, guid: f7f2ed483b87fcc40aa8845a3eefcc50, type: 3}
+  m_Name: Reponse_
   m_EditorClassIdentifier: 
-  IdReplique: 4
-  text: 4
-  ListReponse:
-  - {fileID: 11400000, guid: 0a49f56c6708dc746923be5eee293bc6, type: 2}
+  win: 1
+  replique: {fileID: 11400000, guid: 724ade210a65dbe45b07b5ca16786b40, type: 2}
+  text: 
+  font: {fileID: 0}

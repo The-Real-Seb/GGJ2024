@@ -13,7 +13,13 @@ MonoBehaviour:
   m_Name: Replique_ 2
   m_EditorClassIdentifier: 
   IdReplique: 2
-  text: 2
+  text: " Merci ! Tu aimes les chats ? Moi je suis allergique, mais je les adore
+    quand m\xEAme. "
+  repliqueDuration: 1.5
+  textSpeed: 1.5
+  image: {fileID: 0}
   ListReponse:
-  - {fileID: 11400000, guid: fc5907d81fa998a4a8a4404a382f67f0, type: 2}
-  - {fileID: 11400000, guid: 0a49f56c6708dc746923be5eee293bc6, type: 2}
+  - {fileID: 11400000, guid: 05170dd93dfc64943a78e0c71d1a42fa, type: 2}
+  - {fileID: 11400000, guid: a1e6db9872b5e7849a3afaebb278abaf, type: 2}
+  - {fileID: 11400000, guid: 0de9b61e0e30572488c6cfcc3f9faa58, type: 2}
+  - {fileID: 11400000, guid: 40f3d067d4a6e4f498bd004fa4795730, type: 2}

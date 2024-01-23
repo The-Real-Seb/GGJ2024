@@ -79,10 +79,23 @@ public class DialogueSystem : MonoBehaviour
 
     public void LoadReplique(Reponse reponse)
     {
-        ClearLayout();
-        _IdReplique = reponse.replique.IdReplique;
-        _replique = reponse.replique;
-        ShowNextReplique();
+        if (reponse.win)
+        {
+            ClearLayout();
+            _IdReplique = reponse.replique.IdReplique;
+            _replique = reponse.replique;
+            ShowNextReplique();  
+        }
+        else
+        {
+            GameOver();
+        }
+        
+    }
+
+    public void GameOver()
+    {
+        Debug.Log("GameOver");
     }
 
     void ShowNextReplique()
