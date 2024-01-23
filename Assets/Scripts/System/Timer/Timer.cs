@@ -36,7 +36,7 @@ public class Timer : MonoBehaviour
 
     public IEnumerator GameOver()
     {
-        //GameManager.Instance.currentFace.sprite = angryFace;
+        GameManager.Instance.currentFace.sprite = GameManager.Instance.angryFace;
 
         yield return new WaitForSeconds(1.5f);
 
