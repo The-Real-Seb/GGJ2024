@@ -35,18 +35,6 @@ public class DialogueSystem : MonoBehaviour
         {
             instance = this;
         }
-
-        _ListReplique = new List<Replique>();
-        
-
-        Replique[] repliques = Resources.LoadAll<Replique>("Repliques");
-        if (repliques != null)
-        {
-            foreach (var t in repliques)
-            {
-                _ListReplique.Add(t);
-            }
-        }
     }
 
     private void Update()
@@ -86,6 +74,7 @@ public class DialogueSystem : MonoBehaviour
             _IdReplique = reponse.replique.IdReplique;
             _replique = reponse.replique;
             Timer.Instance.countdown = _replique.repliqueDuration;
+            Timer.Instance.currentTimer = _replique.repliqueDuration;
             ShowNextReplique();  
         }
         else
