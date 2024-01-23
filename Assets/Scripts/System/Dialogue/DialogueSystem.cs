@@ -20,6 +20,8 @@ public class DialogueSystem : MonoBehaviour
     public GameObject buttonPrefab;
     public TextMeshProUGUI texteReplique;
 
+    private bool canPass = false;
+    private Replique _replique;
     
     private static DialogueSystem instance = null;
     public static DialogueSystem Instance => instance;
@@ -51,16 +53,21 @@ public class DialogueSystem : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.anyKey)
         {
-            LoadReplique(firstReponse);
+            ShowNextReplique();
         }
+    }
+
+    private void Start()
+    {
+        LoadReplique(firstReponse);
     }
 
     public void LoadReponse()
     {
         //layoutGroup
-        
+        canPass = false;
         foreach (Reponse reponse in _ListReplique[_IdReplique].ListReponse)
         {
             GameObject button = Instantiate(buttonPrefab, layoutGroup.transform);
@@ -75,24 +82,27 @@ public class DialogueSystem : MonoBehaviour
     public void LoadReplique(Reponse reponse)
     {
         ClearLayout();
+        //StopAllCoroutines();
         _IdReplique = reponse.replique.IdReplique;
+        _replique = reponse.replique;
 
         Debug.LogWarning("IDReponse : " + reponse.IdReponse);
         Debug.LogWarning("IDReplique : " + _IdReplique);
         
-        StartCoroutine(ShowPlayerReplique(reponse));
-    }
-
-    IEnumerator ShowPlayerReplique(Reponse reponse)
-    {
+        //StartCoroutine(ShowPlayerReplique(reponse));
         string text = reponse.afterText;
         Debug.LogWarning("Text: " + text);
         texteReplique.SetText(text);
-        
-        yield return new WaitForSeconds(5);
-        
-        texteReplique.SetText(reponse.replique.text);
-        LoadReponse();
+        canPass = true;
+    }
+
+    void ShowNextReplique()
+    {
+        if (canPass)
+        {
+            texteReplique.SetText(_replique.text);
+            LoadReponse();
+        }
     }
 
     public void ClearLayout()
