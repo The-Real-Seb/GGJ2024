@@ -17,7 +17,7 @@ public class DialogueSystem : MonoBehaviour
     public TextMeshProUGUI texteReplique;
 
     private bool canPass = false;
-    private Replique _replique;
+    public Replique _replique;
     private int _IdReplique = 0;
     private List<Replique> _ListReplique = new List<Replique>();
     private static DialogueSystem instance = null;
@@ -90,6 +90,7 @@ public class DialogueSystem : MonoBehaviour
         //if (canPass)
         //{
             texteReplique.text = ""; // Effacez le texte existant
+            StopAllCoroutines();
             StartCoroutine(TypeSentence(_replique.text));
             LoadReponse();
         //}

@@ -7,5 +7,6 @@ public class Replique : ScriptableObject
 {
     public int IdReplique;
     public string text;
+    public Sprite image;
     public Reponse[] ListReponse;
 }
