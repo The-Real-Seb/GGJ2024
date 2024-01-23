@@ -81,6 +81,7 @@ public class DialogueSystem : MonoBehaviour
     {
         if (reponse.win)
         {
+            GameManager.Instance.AddReplique();
             ClearLayout();
             _IdReplique = reponse.replique.IdReplique;
             _replique = reponse.replique;
@@ -95,7 +96,7 @@ public class DialogueSystem : MonoBehaviour
 
     public void GameOver()
     {
-        Debug.Log("GameOver");
+        //Timer.Instance.GameOver();
     }
 
     void ShowNextReplique()
