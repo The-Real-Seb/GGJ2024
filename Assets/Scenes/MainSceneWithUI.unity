@@ -826,6 +826,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 533949794}
   m_CullTransparentMesh: 1
+--- !u!1 &699346504
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 699346506}
+  - component: {fileID: 699346505}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &699346505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 699346504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9972ddec21713ad4f9db39c1c284ba26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  nbReplique: 0
+  timer: 0
+  currentFace: {fileID: 478314857}
+  currentTenue: {fileID: 345676062}
+  disapointedFace: {fileID: 21300000, guid: 7b557da05c5d2ea4a90fe771a4ffe299, type: 3}
+  basicFace: {fileID: 21300000, guid: f789280bb92fff246a0b0a9db2961f08, type: 3}
+  smilyFace: {fileID: 21300000, guid: 25613207a84c3be4482ca211f00f761e, type: 3}
+  happyFace: {fileID: 21300000, guid: 83830890fc78a3849b8924acc710ac99, type: 3}
+  angryFace: {fileID: 21300000, guid: 8d91d1bc861d7d748a5525d891ef385f, type: 3}
+  basicTenue: {fileID: 21300000, guid: 983e4517c56fa8c43b9b3dd93774fbf3, type: 3}
+  cartonTenue: {fileID: 21300000, guid: 8e59e54178b1cd84f9cb436126a08880, type: 3}
+  wineTenue: {fileID: 21300000, guid: 467f57fb07a5b9d43ae72c8924b7c596, type: 3}
+--- !u!4 &699346506
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 699346504}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1309057624
 GameObject:
   m_ObjectHideFlags: 0
@@ -963,7 +1020,6 @@ GameObject:
   - component: {fileID: 1353908506}
   - component: {fileID: 1353908505}
   - component: {fileID: 1353908504}
-  - component: {fileID: 1353908509}
   m_Layer: 5
   m_Name: DialogueSystem
   m_TagString: Untagged
@@ -1073,27 +1129,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1353908509
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1353908503}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9972ddec21713ad4f9db39c1c284ba26, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 0}
-  nbReplique: 0
-  timer: 0
-  currentFace: {fileID: 478314857}
-  disapointedFace: {fileID: 21300000, guid: 7b557da05c5d2ea4a90fe771a4ffe299, type: 3}
-  basicFace: {fileID: 21300000, guid: 7b557da05c5d2ea4a90fe771a4ffe299, type: 3}
-  smilyFace: {fileID: 21300000, guid: 25613207a84c3be4482ca211f00f761e, type: 3}
-  happyFace: {fileID: 21300000, guid: 83830890fc78a3849b8924acc710ac99, type: 3}
-  angryFace: {fileID: 21300000, guid: 8d91d1bc861d7d748a5525d891ef385f, type: 3}
 --- !u!1 &1470135350
 GameObject:
   m_ObjectHideFlags: 0
@@ -1445,6 +1480,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slider: {fileID: 1718167932}
   countdown: 0
+  currentTimer: 0
 --- !u!1 &2103889938
 GameObject:
   m_ObjectHideFlags: 0
@@ -1529,3 +1565,4 @@ SceneRoots:
   - {fileID: 28647208}
   - {fileID: 1309057626}
   - {fileID: 1353908508}
+  - {fileID: 699346506}
