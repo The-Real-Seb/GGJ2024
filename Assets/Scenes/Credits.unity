@@ -161,7 +161,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -1254, y: 2223}
-  m_SizeDelta: {x: 1000, y: 3600}
+  m_SizeDelta: {x: 1500, y: 3600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &93320713
 Animator:
@@ -204,13 +204,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '<b><size=120><i>CREDITS</i></size></b>
+  m_text: '<b><size=150><i>CREDITS</i></size></b>
 
 
 
 
 
-    <b><u><size=80>Game Development</size></u></b>
+    <b><u><size=100>Game Development</size></u></b>
 
 
 
@@ -241,7 +241,7 @@ MonoBehaviour:
 
 
 
-    <b><u><size=80>Game
+    <b><u><size=100>Game
     Design</size></u></b>
 
 
@@ -283,7 +283,7 @@ MonoBehaviour:
 
 
 
-    <b><u><size=80>Game Production</size></u></b>
+    <b><u><size=100>Game Production</size></u></b>
 
 
 
@@ -312,7 +312,7 @@ MonoBehaviour:
 
 
 
-    <b><u><size=80>Animation</size></u></b>
+    <b><u><size=100>Animation</size></u></b>
 
 
 
@@ -340,7 +340,7 @@ MonoBehaviour:
 
 
 
-    <b><u><size=80>Art</size></u></b>
+    <b><u><size=100>Art</size></u></b>
 
 
 
@@ -386,7 +386,7 @@ MonoBehaviour:
 
 
 
-    <b><u><size=80>Audio</size></u></b>
+    <b><u><size=100>Audio</size></u></b>
 
 
 
@@ -428,8 +428,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 60
-  m_fontSizeBase: 60
+  m_fontSize: 80
+  m_fontSizeBase: 80
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -614,8 +614,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 5043}
-  m_SizeDelta: {x: 700, y: 1500}
+  m_AnchoredPosition: {x: 11, y: -8839}
+  m_SizeDelta: {x: 1500, y: 1500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &494190792
 MonoBehaviour:
@@ -680,8 +680,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 60
-  m_fontSizeBase: 60
+  m_fontSize: 80
+  m_fontSizeBase: 80
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -788,7 +788,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -908,8 +908,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -31, y: 6494}
-  m_SizeDelta: {x: 600, y: 600}
+  m_AnchoredPosition: {x: -33, y: 2597}
+  m_SizeDelta: {x: 1000, y: 1000}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1132579674
 MonoBehaviour:

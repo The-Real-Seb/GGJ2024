@@ -15,7 +15,7 @@ MonoBehaviour:
   IdReplique: 5
   text: "Haha, c\u2019est super ! Mais tu ne devrais peut \xEAtre pas \xEAtre aussi
     s\xFBre de toi"
-  repliqueDuration: 1.5
+  repliqueDuration: 10
   textSpeed: 1.5
   image: {fileID: 0}
   ListReponse:

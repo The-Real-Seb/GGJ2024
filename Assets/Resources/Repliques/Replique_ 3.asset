@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IdReplique: 3
   text: Et quelles sont tes passions ?
-  repliqueDuration: 1
+  repliqueDuration: 10
   textSpeed: 1
   image: {fileID: 0}
   ListReponse:

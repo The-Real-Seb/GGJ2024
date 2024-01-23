@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IdReplique: 10
   text: "Quel \xE9l\xE9ment chimique porte le num\xE9ro atomique 7 ?"
-  repliqueDuration: 1.5
+  repliqueDuration: 10
   textSpeed: 1.5
   image: {fileID: 0}
   ListReponse:

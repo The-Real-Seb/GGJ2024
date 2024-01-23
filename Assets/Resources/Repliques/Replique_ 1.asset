@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IdReplique: 1
   text: "Ravi de vous rencontrer je m\u2019appelle Nicole"
-  repliqueDuration: 1
+  repliqueDuration: 10
   textSpeed: 1
   image: {fileID: 0}
   ListReponse:
