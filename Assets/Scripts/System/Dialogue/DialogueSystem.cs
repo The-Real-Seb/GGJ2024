@@ -22,10 +22,12 @@ public class DialogueSystem : MonoBehaviour
     private List<Replique> _ListReplique = new List<Replique>();
     private static DialogueSystem instance = null;
     public static DialogueSystem Instance => instance;
-  
-    
+    private AudioSource audioSource;
+
+
     private void Awake()
     {
+        audioSource = GetComponent<AudioSource>();
         if (instance != null && instance != this)
         {
             Destroy(this.gameObject);
@@ -70,6 +72,7 @@ public class DialogueSystem : MonoBehaviour
         if (reponse.win)
         {
             GameManager.Instance.AddReplique();
+            SceneAudioPlayer.Instance.AccelerateMusicSpeed();
             ClearLayout();
             _IdReplique = reponse.replique.IdReplique;
             _replique = reponse.replique;
@@ -85,7 +88,8 @@ public class DialogueSystem : MonoBehaviour
     }
 
     public void GameOver()
-    {        
+    {
+        GameManager.Instance.hasLost = true;
         StartCoroutine(Timer.Instance.GameOver());
     }
 
@@ -105,6 +109,9 @@ public class DialogueSystem : MonoBehaviour
     {
         foreach (char letter in sentence.ToCharArray())
         {
+            audioSource.Play();
+            float newPitch = Mathf.Clamp(audioSource.pitch, 0.9f, 1.1f);
+            audioSource.pitch = newPitch;
             texteReplique.text += letter;
             yield return new WaitForSeconds(typingSpeed * 0.05f);
         }
