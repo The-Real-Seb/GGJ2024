@@ -1,4 +1,7 @@
 using UnityEngine;
+using System.Collections;
+using UnityEngine.SceneManagement;
+
 
 public class Timer : MonoBehaviour
 {
@@ -29,5 +32,14 @@ public class Timer : MonoBehaviour
             countdown -= Time.deltaTime;
 
 
+    }
+
+    public IEnumerator GameOver()
+    {
+        //GameManager.Instance.currentFace.sprite = angryFace;
+
+        yield return new WaitForSeconds(1.5f);
+
+        SceneManager.LoadScene("Credits");
     }
 }
