@@ -6,7 +6,6 @@ using UnityEngine;
 public class Replique : ScriptableObject
 {
     public int IdReplique;
-    public int _LinkIdReponse;
     public string text;
     public Reponse[] ListReponse;
 }

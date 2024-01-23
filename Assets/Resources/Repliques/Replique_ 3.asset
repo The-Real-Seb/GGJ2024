@@ -10,7 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e5c6ccc74a6dd324899ecf9827e329d5, type: 3}
-  m_Name: Replique_
+  m_Name: Replique_ 3
   m_EditorClassIdentifier: 
-  text: 
-  ListReponse: []
+  IdReplique: 3
+  text: 3
+  ListReponse:
+  - {fileID: 11400000, guid: 3da60c2be6dfa6349a8ec3e8bf8b21d5, type: 2}

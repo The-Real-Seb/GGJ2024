@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class Reponse : ScriptableObject
 {
     public int IdReponse;
-    public int _LinkIdReplique;
+    public Replique replique;
     public string afterText;
     public Image uiImage;
 }

@@ -10,9 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f7f2ed483b87fcc40aa8845a3eefcc50, type: 3}
-  m_Name: Reponse_
+  m_Name: Reponse_ 3
   m_EditorClassIdentifier: 
-  IdReponse: 0
-  replique: {fileID: 11400000, guid: 724ade210a65dbe45b07b5ca16786b40, type: 2}
-  afterText: 
+  IdReponse: 3
+  replique: {fileID: 11400000, guid: c1f36c752cd0c1b45b0ffff5b9b913b3, type: 2}
+  afterText: "Salut esp\xE8ce de quoicoubatarde, t\u2019as les crampt\xE9s ? Apagnan.
+    (plus) Wow tu es si mature et intelligent, j\u2019avais jamais entendu \xE7a
+    \xE7a va \xEAtre devenir un buzz national en un rien de temps ! "
   uiImage: {fileID: 0}

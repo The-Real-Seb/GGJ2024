@@ -12,5 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7f2ed483b87fcc40aa8845a3eefcc50, type: 3}
   m_Name: Reponse_ 1
   m_EditorClassIdentifier: 
-  afterText: 
+  IdReponse: 1
+  replique: {fileID: 11400000, guid: 724ade210a65dbe45b07b5ca16786b40, type: 2}
+  afterText: "Salut Jacqueline, moi c\u2019est Joueur, qu\u2019est ce qui t'am\xE8ne
+    ? (neutre) Je cherche a me trouver une relation s\xE9rieuse; j\u2019en ai ma
+    claque des coups d\u2019un soir qui ne d\xE9bouche sur rien de plus que de se
+    faire bloquer dans mes contacts. "
   uiImage: {fileID: 0}

@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f7f2ed483b87fcc40aa8845a3eefcc50, type: 3}
-  m_Name: Reponse_
+  m_Name: Reponse_ 2
   m_EditorClassIdentifier: 
-  IdReponse: 0
-  replique: {fileID: 11400000, guid: 724ade210a65dbe45b07b5ca16786b40, type: 2}
-  afterText: 
+  IdReponse: 2
+  replique: {fileID: 11400000, guid: 91cc1f58e176c9349a06cbd2b9108d1a, type: 2}
+  afterText: "Hey Jacqueline, c\u2019est marrant c\u2019est le pr\xE9nom de ma grand
+    mere (moins) Ha\u2026 super, tu m\u2019en vois ravie. "
   uiImage: {fileID: 0}

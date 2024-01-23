@@ -11,8 +11,15 @@ public class YesButton : MonoBehaviour
     private Button _Button;
     private Image _Image;
 
-    public void InitButton()
+    
+    public void InitButton(Reponse rep)
     {
-        _Image.sprite = reponse.uiImage.sprite;
+        reponse = rep;
+        //_Image.sprite = reponse.uiImage.sprite;
+    }
+
+    public void onYesClick()
+    {
+        DialogueSystem.Instance.LoadReplique(reponse);
     }
 }

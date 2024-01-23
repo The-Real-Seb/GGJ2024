@@ -10,11 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e5c6ccc74a6dd324899ecf9827e329d5, type: 3}
-  m_Name: Replique_ 1
+  m_Name: Replique_ 2
   m_EditorClassIdentifier: 
-  IdReplique: 1
-  text: "Bonjour, je m\u2019appelle Jacqueline."
+  IdReplique: 2
+  text: 2
   ListReponse:
-  - {fileID: 11400000, guid: 0a49f56c6708dc746923be5eee293bc6, type: 2}
-  - {fileID: 11400000, guid: 3da60c2be6dfa6349a8ec3e8bf8b21d5, type: 2}
   - {fileID: 11400000, guid: fc5907d81fa998a4a8a4404a382f67f0, type: 2}
+  - {fileID: 11400000, guid: 0a49f56c6708dc746923be5eee293bc6, type: 2}
