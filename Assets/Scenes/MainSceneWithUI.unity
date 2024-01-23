@@ -1582,7 +1582,7 @@ PrefabInstance:
     - target: {fileID: 3329362284397699620, guid: 6ff360695f35eed4581391c8f6c0ca53,
         type: 3}
       propertyPath: SpeedMultiplicator
-      value: 1.1
+      value: 1.05
       objectReference: {fileID: 0}
     - target: {fileID: 8234234903249462986, guid: 6ff360695f35eed4581391c8f6c0ca53,
         type: 3}

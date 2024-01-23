@@ -9,16 +9,29 @@ public class SceneAudioPlayer : MonoBehaviour
     private float playbackSpeed = 1.0f; // Default playback speed
     public float SpeedMultiplicator;
 
+    private static SceneAudioPlayer instance = null;
+    public static SceneAudioPlayer Instance => instance;
 
 
     private void Awake()
     {
         audioSource = GetComponent<AudioSource>();
+
+        if (instance != null && instance != this)
+        {
+            Destroy(this.gameObject);
+            return;
+        }
+        else
+        {
+            instance = this;
+        }
     }
 
 
-        // Example method to be called when you trigger a custom event to change playback speed
-        public void ChangePlaybackSpeed()
+
+
+        public void AccelerateMusicSpeed()
     {
         playbackSpeed = playbackSpeed * SpeedMultiplicator;
         audioSource.pitch = playbackSpeed;

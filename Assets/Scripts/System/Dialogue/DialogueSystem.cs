@@ -69,6 +69,7 @@ public class DialogueSystem : MonoBehaviour
     {
         if (reponse.win)
         {
+            SceneAudioPlayer.Instance.AccelerateMusicSpeed();
             //GameManager.Instance.AddReplique();
             ClearLayout();
             _IdReplique = reponse.replique.IdReplique;
