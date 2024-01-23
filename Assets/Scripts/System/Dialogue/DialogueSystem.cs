@@ -66,7 +66,7 @@ public class DialogueSystem : MonoBehaviour
     {
         //layoutGroup
         canPass = false;
-        foreach (Reponse reponse in _ListReplique[_IdReplique].ListReponse)
+        foreach (Reponse reponse in _replique.ListReponse)
         {
             GameObject button = Instantiate(buttonPrefab, layoutGroup.transform);
 
