@@ -16,7 +16,6 @@ public class DialogueSystem : MonoBehaviour
     public GameObject buttonPrefab;
     public TextMeshProUGUI texteReplique;
 
-    private bool canPass = false;
     public Replique _replique;
     private int _IdReplique = 0;
     private List<Replique> _ListReplique = new List<Replique>();
@@ -38,13 +37,6 @@ public class DialogueSystem : MonoBehaviour
         }
     }
 
-    private void Update()
-    {
-        if (Input.anyKey)
-        {
-            //ShowNextReplique();
-        }
-    }
 
     public void Start()
     {
@@ -54,7 +46,6 @@ public class DialogueSystem : MonoBehaviour
     public void LoadReponse()
     {
         //layoutGroup
-        canPass = false;
         foreach (Reponse reponse in _replique.ListReponse)
         {
             GameObject button = Instantiate(buttonPrefab, layoutGroup.transform);
@@ -94,13 +85,10 @@ public class DialogueSystem : MonoBehaviour
 
     void ShowNextReplique()
     {
-        //if (canPass)
-        //{
-            texteReplique.text = ""; // Effacez le texte existant
-            StopAllCoroutines();
-            StartCoroutine(TypeSentence(_replique.text));
-            LoadReponse();
-        //}
+        texteReplique.text = ""; // Effacez le texte existant
+        StopAllCoroutines();
+        StartCoroutine(TypeSentence(_replique.text));
+        LoadReponse();
     }
     
     IEnumerator TypeSentence(string sentence)
