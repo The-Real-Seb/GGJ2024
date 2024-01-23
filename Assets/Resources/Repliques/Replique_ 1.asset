@@ -13,8 +13,12 @@ MonoBehaviour:
   m_Name: Replique_ 1
   m_EditorClassIdentifier: 
   IdReplique: 1
-  text: "Bonjour, je m\u2019appelle Jacqueline."
+  text: "Ravi de vous rencontrer je m\u2019appelle Nicole"
+  repliqueDuration: 1
+  textSpeed: 1
+  image: {fileID: 0}
   ListReponse:
-  - {fileID: 11400000, guid: 0a49f56c6708dc746923be5eee293bc6, type: 2}
-  - {fileID: 11400000, guid: 3da60c2be6dfa6349a8ec3e8bf8b21d5, type: 2}
-  - {fileID: 11400000, guid: fc5907d81fa998a4a8a4404a382f67f0, type: 2}
+  - {fileID: 11400000, guid: 5451c45a4f8f1634e8aa9600df666860, type: 2}
+  - {fileID: 11400000, guid: 3bc4a5d2b1e11a449964c6bf2153d837, type: 2}
+  - {fileID: 11400000, guid: 678269294e45a4648a2727d4b0e71a02, type: 2}
+  - {fileID: 11400000, guid: 8fd9ad1dbca6939469ad845f69bccb2a, type: 2}
