@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7f2ed483b87fcc40aa8845a3eefcc50, type: 3}
   m_Name: Reponse_ 4
   m_EditorClassIdentifier: 
-  win: 1
-  replique: {fileID: 11400000, guid: c7d2652aac26fea4681ffd5c5e38b353, type: 2}
-  text: "J\u2019adore les chats !"
+  win: 0
+  replique: {fileID: 11400000, guid: 6e123bca212b64148980f5dbbdef5ac2, type: 2}
+  text: La lettre B.
   font: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

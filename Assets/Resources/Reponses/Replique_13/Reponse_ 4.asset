@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Reponse_ 4
   m_EditorClassIdentifier: 
   win: 1
-  replique: {fileID: 11400000, guid: c7d2652aac26fea4681ffd5c5e38b353, type: 2}
-  text: "J\u2019adore les chats !"
+  replique: {fileID: 11400000, guid: e8fdc2333c8b68d49bfb2f5942a56fde, type: 2}
+  text: OUI !
   font: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

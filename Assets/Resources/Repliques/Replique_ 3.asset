@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5c6ccc74a6dd324899ecf9827e329d5, type: 3}
+  m_Name: Replique_ 3
+  m_EditorClassIdentifier: 
+  IdReplique: 3
+  text: Et quelles sont tes passions ?
+  repliqueDuration: 1
+  textSpeed: 1
+  image: {fileID: 0}
+  ListReponse:
+  - {fileID: 11400000, guid: 76b71b1ebb8da004ba7636eb3d77098f, type: 2}
+  - {fileID: 11400000, guid: 82e4a7988db0a96419af95c920631cef, type: 2}
+  - {fileID: 11400000, guid: 3a1e6dbcfdca5314bbdf64c49c22b290, type: 2}
+  - {fileID: 11400000, guid: 1a6334855475da84a8a4e71c3a8aab05, type: 2}

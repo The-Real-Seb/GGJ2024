@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5c6ccc74a6dd324899ecf9827e329d5, type: 3}
+  m_Name: Replique_ 4
+  m_EditorClassIdentifier: 
+  IdReplique: 4
+  text: "Super !  Tu sais il se trouve que je suis une femme assez exigeante, je
+    pense que la personne qui pourra partager ma vie doit \xEAtre quelqu\u2019un
+    de cultiv\xE9."
+  repliqueDuration: 2
+  textSpeed: 2
+  image: {fileID: 0}
+  ListReponse:
+  - {fileID: 11400000, guid: a63d51b35caf458458e376697e22358b, type: 2}
+  - {fileID: 11400000, guid: 412e925ffe2a8624a9897ea178de0075, type: 2}
+  - {fileID: 11400000, guid: 8a32d64542aba7d47b297118646cbbea, type: 2}
+  - {fileID: 11400000, guid: 0772827f069fba84e82c47354a3f69b6, type: 2}

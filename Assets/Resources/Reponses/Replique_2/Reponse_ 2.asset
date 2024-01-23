@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Reponse_ 2
   m_EditorClassIdentifier: 
   win: 0
-  replique: {fileID: 11400000, guid: 724ade210a65dbe45b07b5ca16786b40, type: 2}
+  replique: {fileID: 11400000, guid: c7d2652aac26fea4681ffd5c5e38b353, type: 2}
   text: "Je d\xE9teste ces sales b\xEAtes !"
   font: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

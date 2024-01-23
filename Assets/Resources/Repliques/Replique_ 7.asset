@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5c6ccc74a6dd324899ecf9827e329d5, type: 3}
+  m_Name: Replique_ 7
+  m_EditorClassIdentifier: 
+  IdReplique: 7
+  text: "Quel \xE9crivain a popularis\xE9 le terme \"ubuesque\" avec sa pi\xE8ce
+    de th\xE9\xE2tre sur le personnage d'Ubu Roi ?"
+  repliqueDuration: 2.5
+  textSpeed: 2.5
+  image: {fileID: 0}
+  ListReponse:
+  - {fileID: 11400000, guid: 764be9dcde458af4ba13f9515dac9bb3, type: 2}
+  - {fileID: 11400000, guid: 5e6e198d655e2e34f8d8b3ec9051b91e, type: 2}
+  - {fileID: 11400000, guid: aded64b41a1477843a3d7a23e90f7098, type: 2}
+  - {fileID: 11400000, guid: 69e059cb7a863dd459aa8935faae461b, type: 2}

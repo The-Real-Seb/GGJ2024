@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e5c6ccc74a6dd324899ecf9827e329d5, type: 3}
-  m_Name: Replique_ 2
+  m_Name: Replique_ 5
   m_EditorClassIdentifier: 
-  IdReplique: 2
-  text: "Merci ! Tu aimes les chats ? Moi je suis allergique, mais je les adore quand
-    m\xEAme. "
+  IdReplique: 5
+  text: "Haha, c\u2019est super ! Mais tu ne devrais peut \xEAtre pas \xEAtre aussi
+    s\xFBre de toi"
   repliqueDuration: 1.5
   textSpeed: 1.5
   image: {fileID: 0}
   ListReponse:
-  - {fileID: 11400000, guid: 05170dd93dfc64943a78e0c71d1a42fa, type: 2}
-  - {fileID: 11400000, guid: a1e6db9872b5e7849a3afaebb278abaf, type: 2}
-  - {fileID: 11400000, guid: 0de9b61e0e30572488c6cfcc3f9faa58, type: 2}
-  - {fileID: 11400000, guid: 40f3d067d4a6e4f498bd004fa4795730, type: 2}
+  - {fileID: 11400000, guid: 61a80aaa1edd8ef42aaa08b22f041d72, type: 2}
+  - {fileID: 11400000, guid: 071a4e168ba18bb4da896d4ec4c4b2cd, type: 2}
+  - {fileID: 11400000, guid: dff95582af5197747be2a890b676f060, type: 2}
+  - {fileID: 11400000, guid: 745eff9da7c3ade4f98b971912c5bbbc, type: 2}
