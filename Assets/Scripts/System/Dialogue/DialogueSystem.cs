@@ -111,6 +111,8 @@ public class DialogueSystem : MonoBehaviour
             //float newPitch = Mathf.Clamp(audioSource.pitch, 0.9f, 1.1f);
             //audioSource.pitch = newPitch;
             texteReplique.text += letter;
+            if(GameManager.Instance.hasLost)    
+                break;
             yield return new WaitForSeconds(typingSpeed * 0.05f);
         }
     }
