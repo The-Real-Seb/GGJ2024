@@ -107,9 +107,9 @@ public class DialogueSystem : MonoBehaviour
     {
         foreach (char letter in sentence.ToCharArray())
         {
-            //audioSource.Play();
-            //float newPitch = Mathf.Clamp(audioSource.pitch, 0.9f, 1.1f);
-            //audioSource.pitch = newPitch;
+            audioSource.Play();
+            float newPitch = Mathf.Clamp(audioSource.pitch, 0.9f, 1.1f);
+            audioSource.pitch = newPitch;
             texteReplique.text += letter;
             yield return new WaitForSeconds(typingSpeed * 0.05f);
         }
