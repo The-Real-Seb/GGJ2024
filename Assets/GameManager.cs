@@ -38,6 +38,11 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        currentFace.sprite = disapointedFace;
+    }
+
     private void CheckSprite()
     {
         switch (nbReplique)

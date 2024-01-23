@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 using UnityEngine.SceneManagement;
 
@@ -8,7 +9,10 @@ public class Timer : MonoBehaviour
     private static Timer instance = null;
     public static Timer Instance => instance;
 
-    private float countdown;
+    public Slider slider;
+
+    public float countdown;
+
 
     private void Awake()
     {
@@ -21,8 +25,6 @@ public class Timer : MonoBehaviour
         {
             instance = this;
         }
-
-        countdown = DialogueSystem.Instance._replique.repliqueDuration;
     }
 
 
@@ -30,8 +32,10 @@ public class Timer : MonoBehaviour
     {
         if (countdown > 0)
             countdown -= Time.deltaTime;
+        else if (countdown <= 0)
+            StartCoroutine(GameOver());
 
-
+        slider.value = countdown;
     }
 
     public IEnumerator GameOver()
