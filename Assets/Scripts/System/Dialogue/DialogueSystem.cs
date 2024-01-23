@@ -85,7 +85,8 @@ public class DialogueSystem : MonoBehaviour
     }
 
     public void GameOver()
-    {        
+    {
+        GameManager.Instance.hasLost = true;
         StartCoroutine(Timer.Instance.GameOver());
     }
 
