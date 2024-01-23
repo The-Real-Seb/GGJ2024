@@ -14,11 +14,18 @@ public class GameManager : MonoBehaviour
     public float timer;//a changer
 
     public Image currentFace;
+    public Image currentTenue;
+    
     public Sprite disapointedFace;
     public Sprite basicFace;
     public Sprite smilyFace;
     public Sprite happyFace;
     public Sprite angryFace;
+    public bool hasLost;
+    
+    public Sprite basicTenue;
+    public Sprite cartonTenue;
+    public Sprite wineTenue;
     
 
     public void AddReplique()
@@ -56,15 +63,22 @@ public class GameManager : MonoBehaviour
         {
             case 0:
                 currentFace.sprite = disapointedFace;
+                currentTenue.sprite = basicTenue;
+                
                 break;
             case 3:
                 currentFace.sprite = basicFace;
                 break;
             case 6:
                 currentFace.sprite = smilyFace;
+                currentTenue.sprite = cartonTenue;
                 break;
             case 9:
                 currentFace.sprite = happyFace;
+                break;
+            case 13:
+                currentFace.sprite = happyFace;
+                currentTenue.sprite = wineTenue;
                 break;
         }
     }
