@@ -5,26 +5,24 @@ using System.Linq;
 using TMPro;
 using UnityEngine;
 using Object = UnityEngine.Object;
+using Random = UnityEngine.Random;
 
 public class DialogueSystem : MonoBehaviour
 {
-    [SerializeField]
-    private int _IdReplique = 0;
-
-    [SerializeField]
-    private List<Replique> _ListReplique = new List<Replique>();
-
     public Reponse firstReponse;
-
+    [Range(0.1f,100f)]
+    public float typingSpeed;
     public GameObject layoutGroup;
     public GameObject buttonPrefab;
     public TextMeshProUGUI texteReplique;
 
     private bool canPass = false;
     private Replique _replique;
-    
+    private int _IdReplique = 0;
+    private List<Replique> _ListReplique = new List<Replique>();
     private static DialogueSystem instance = null;
     public static DialogueSystem Instance => instance;
+  
     
     private void Awake()
     {
@@ -55,7 +53,7 @@ public class DialogueSystem : MonoBehaviour
     {
         if (Input.anyKey)
         {
-            ShowNextReplique();
+            //ShowNextReplique();
         }
     }
 
@@ -82,26 +80,27 @@ public class DialogueSystem : MonoBehaviour
     public void LoadReplique(Reponse reponse)
     {
         ClearLayout();
-        //StopAllCoroutines();
         _IdReplique = reponse.replique.IdReplique;
         _replique = reponse.replique;
-
-        Debug.LogWarning("IDReponse : " + reponse.IdReponse);
-        Debug.LogWarning("IDReplique : " + _IdReplique);
-        
-        //StartCoroutine(ShowPlayerReplique(reponse));
-        string text = reponse.afterText;
-        Debug.LogWarning("Text: " + text);
-        texteReplique.SetText(text);
-        canPass = true;
+        ShowNextReplique();
     }
 
     void ShowNextReplique()
     {
-        if (canPass)
-        {
-            texteReplique.SetText(_replique.text);
+        //if (canPass)
+        //{
+            texteReplique.text = ""; // Effacez le texte existant
+            StartCoroutine(TypeSentence(_replique.text));
             LoadReponse();
+        //}
+    }
+    
+    IEnumerator TypeSentence(string sentence)
+    {
+        foreach (char letter in sentence.ToCharArray())
+        {
+            texteReplique.text += letter;
+            yield return new WaitForSeconds(typingSpeed * 0.05f);
         }
     }
 
@@ -118,3 +117,5 @@ public class DialogueSystem : MonoBehaviour
     }
     
 }
+    
+

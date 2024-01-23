@@ -14,6 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IdReponse: 2
   replique: {fileID: 11400000, guid: 91cc1f58e176c9349a06cbd2b9108d1a, type: 2}
-  afterText: "Hey Jacqueline, c\u2019est marrant c\u2019est le pr\xE9nom de ma grand
-    mere (moins) Ha\u2026 super, tu m\u2019en vois ravie. "
-  uiImage: {fileID: 0}
+  text: 
+  font: {fileID: 11400000, guid: f27b2bed3397b7246ba1e74f4504ecc3, type: 2}

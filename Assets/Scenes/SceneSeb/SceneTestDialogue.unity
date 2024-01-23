@@ -238,9 +238,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ce360f2fdc46474aa01baf64b66d251, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _IdReplique: 0
-  _ListReplique: []
   firstReponse: {fileID: 11400000, guid: 42b987eaed27743429aa3463d103cfa2, type: 2}
+  typingSpeed: 1
   layoutGroup: {fileID: 1362561188}
   buttonPrefab: {fileID: 5139610389487938647, guid: 8287a9ebef782e040ac08600e5090a60,
     type: 3}

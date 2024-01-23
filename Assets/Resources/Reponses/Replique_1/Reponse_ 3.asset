@@ -14,7 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IdReponse: 3
   replique: {fileID: 11400000, guid: c1f36c752cd0c1b45b0ffff5b9b913b3, type: 2}
-  afterText: "Salut esp\xE8ce de quoicoubatarde, t\u2019as les crampt\xE9s ? Apagnan.
-    (plus) Wow tu es si mature et intelligent, j\u2019avais jamais entendu \xE7a
-    \xE7a va \xEAtre devenir un buzz national en un rien de temps ! "
-  uiImage: {fileID: 0}
+  text: 
+  font: {fileID: 11400000, guid: 0fb84a216c2536c43806c4cc80b8e4b2, type: 2}

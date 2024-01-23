@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,6 +9,6 @@ public class Reponse : ScriptableObject
 {
     public int IdReponse;
     public Replique replique;
-    public string afterText;
-    public Image uiImage;
+    public string text;
+    public TMP_FontAsset font;
 }
