@@ -57,7 +57,7 @@ public class DialogueSystem : MonoBehaviour
         }
     }
 
-    private void Start()
+    public void Start()
     {
         LoadReplique(firstReponse);
     }
@@ -66,7 +66,7 @@ public class DialogueSystem : MonoBehaviour
     {
         //layoutGroup
         canPass = false;
-        foreach (Reponse reponse in _ListReplique[_IdReplique].ListReponse)
+        foreach (Reponse reponse in _replique.ListReponse)
         {
             GameObject button = Instantiate(buttonPrefab, layoutGroup.transform);
 
@@ -81,9 +81,11 @@ public class DialogueSystem : MonoBehaviour
     {
         if (reponse.win)
         {
+            //GameManager.Instance.AddReplique();
             ClearLayout();
             _IdReplique = reponse.replique.IdReplique;
             _replique = reponse.replique;
+            Timer.Instance.countdown = _replique.repliqueDuration;
             ShowNextReplique();  
         }
         else
@@ -95,7 +97,7 @@ public class DialogueSystem : MonoBehaviour
 
     public void GameOver()
     {
-        Debug.Log("GameOver");
+        Timer.Instance.GameOver();
     }
 
     void ShowNextReplique()
