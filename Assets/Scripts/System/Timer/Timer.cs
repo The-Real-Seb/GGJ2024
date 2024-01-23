@@ -5,6 +5,8 @@ public class Timer : MonoBehaviour
     private static Timer instance = null;
     public static Timer Instance => instance;
 
+
+
     private void Awake()
     {
         if (instance != null && instance != this)
@@ -16,5 +18,10 @@ public class Timer : MonoBehaviour
         {
             instance = this;
         }
+    }
+
+
+    private void Update()
+    {
     }
 }
