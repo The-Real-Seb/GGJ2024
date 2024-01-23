@@ -15,7 +15,7 @@ MonoBehaviour:
   IdReplique: 13
   text: "Huf huf\u2026. Ok, j\u2019ai encore une derni\xE8re question\u2026 Tu es
     libre demain ?"
-  repliqueDuration: 10
+  repliqueDuration: 1000000
   textSpeed: 1
   image: {fileID: 0}
   ListReponse:

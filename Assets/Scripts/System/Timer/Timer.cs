@@ -12,6 +12,7 @@ public class Timer : MonoBehaviour
     public Slider slider;
 
     public float countdown;
+    public float currentTimer;
 
 
     private void Awake()
@@ -30,19 +31,19 @@ public class Timer : MonoBehaviour
 
     private void Update()
     {
-        if (countdown > 0)
-            countdown -= Time.deltaTime;
-        else if (countdown <= 0)
+        if (currentTimer > 0)
+            currentTimer -= Time.deltaTime;
+        else if (currentTimer <= 0)
             StartCoroutine(GameOver());
 
-        slider.value = countdown;
+        slider.value = currentTimer / countdown;
     }
 
     public IEnumerator GameOver()
     {
         GameManager.Instance.currentFace.sprite = GameManager.Instance.angryFace;
 
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(2.5f);
 
         SceneManager.LoadScene("Credits");
     }
