@@ -31,7 +31,7 @@ public class Timer : MonoBehaviour
 
     private void Update()
     {
-        if (currentTimer > 0)
+        if (currentTimer > 0 && !GameManager.Instance.hasLost)
             currentTimer -= Time.deltaTime;
         else if (currentTimer <= 0)
             StartCoroutine(GameOver());
