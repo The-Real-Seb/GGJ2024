@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5c6ccc74a6dd324899ecf9827e329d5, type: 3}
+  m_Name: Replique_ 2
+  m_EditorClassIdentifier: 
+  IdReplique: 2
+  text: 2
+  ListReponse:
+  - {fileID: 11400000, guid: fc5907d81fa998a4a8a4404a382f67f0, type: 2}
+  - {fileID: 11400000, guid: 0a49f56c6708dc746923be5eee293bc6, type: 2}
