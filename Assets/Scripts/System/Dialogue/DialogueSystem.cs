@@ -22,12 +22,11 @@ public class DialogueSystem : MonoBehaviour
     private List<Replique> _ListReplique = new List<Replique>();
     private static DialogueSystem instance = null;
     public static DialogueSystem Instance => instance;
-    private AudioSource audioSource;
+    public AudioSource audioSource;
 
 
     private void Awake()
     {
-        audioSource = GetComponent<AudioSource>();
         if (instance != null && instance != this)
         {
             Destroy(this.gameObject);
@@ -98,8 +97,7 @@ public class DialogueSystem : MonoBehaviour
         //if (canPass)
         //{
             texteReplique.text = ""; // Effacez le texte existant
-            //StopAllCoroutines();
-            StopCoroutine(TypeSentence(_replique.text));
+            StopAllCoroutines();
             StartCoroutine(TypeSentence(_replique.text));
             LoadReponse();
         //}
@@ -109,9 +107,9 @@ public class DialogueSystem : MonoBehaviour
     {
         foreach (char letter in sentence.ToCharArray())
         {
-            audioSource.Play();
-            float newPitch = Mathf.Clamp(audioSource.pitch, 0.9f, 1.1f);
-            audioSource.pitch = newPitch;
+            //audioSource.Play();
+            //float newPitch = Mathf.Clamp(audioSource.pitch, 0.9f, 1.1f);
+            //audioSource.pitch = newPitch;
             texteReplique.text += letter;
             yield return new WaitForSeconds(typingSpeed * 0.05f);
         }
