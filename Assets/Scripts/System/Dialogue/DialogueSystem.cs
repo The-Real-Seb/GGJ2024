@@ -86,7 +86,7 @@ public class DialogueSystem : MonoBehaviour
 
     public void GameOver()
     {
-        Timer.Instance.GameOver();
+        StartCoroutine(Timer.Instance.GameOver());
     }
 
     void ShowNextReplique()

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IdReplique: 6
   text: "Ah ouais ? tu te crois malin, hein ? ON VA VOIR \xC7A !!"
-  repliqueDuration: 1.5
+  repliqueDuration: 1000000
   textSpeed: 1.5
   image: {fileID: 0}
   ListReponse:

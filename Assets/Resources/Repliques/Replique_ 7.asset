@@ -15,7 +15,7 @@ MonoBehaviour:
   IdReplique: 7
   text: "Quel \xE9crivain a popularis\xE9 le terme \"ubuesque\" avec sa pi\xE8ce
     de th\xE9\xE2tre sur le personnage d'Ubu Roi ?"
-  repliqueDuration: 2.5
+  repliqueDuration: 1000000
   textSpeed: 2.5
   image: {fileID: 0}
   ListReponse:

@@ -16,7 +16,7 @@ MonoBehaviour:
   text: "Quel peuple nomade, r\xE9put\xE9 pour sa ma\xEEtrise de l'\xE9quitation
     et sa redoutable cavalerie, a jou\xE9 un r\xF4le majeur dans l'histoire de l'Europe
     et de l'Asie centrale, notamment sous le commandement d'Attila ?"
-  repliqueDuration: 3
+  repliqueDuration: 1000000
   textSpeed: 3
   image: {fileID: 0}
   ListReponse:

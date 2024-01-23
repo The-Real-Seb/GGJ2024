@@ -15,7 +15,7 @@ MonoBehaviour:
   IdReplique: 2
   text: "Merci ! Tu aimes les chats ? Moi je suis allergique, mais je les adore quand
     m\xEAme. "
-  repliqueDuration: 1.5
+  repliqueDuration: 1000000
   textSpeed: 1.5
   image: {fileID: 0}
   ListReponse:
