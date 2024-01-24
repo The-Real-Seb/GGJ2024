@@ -885,7 +885,7 @@ GameObject:
   - component: {fileID: 782576107}
   - component: {fileID: 782576106}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: LoadScene
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -903,6 +903,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a075c4fab892794ea46af1baa24a14a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  duration: 11
 --- !u!4 &782576107
 Transform:
   m_ObjectHideFlags: 0

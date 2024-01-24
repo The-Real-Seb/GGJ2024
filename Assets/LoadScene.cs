@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class LoadScene : MonoBehaviour
 {
+    public float duration;
+
+
     private void Start()
     {
         StartCoroutine(LoadMenu());
@@ -12,7 +15,7 @@ public class LoadScene : MonoBehaviour
 
     public IEnumerator LoadMenu()
     {
-        yield return new WaitForSeconds(11);
+        yield return new WaitForSeconds(duration);
 
         SceneManager.LoadScene("MenuPrincipal");
     }
