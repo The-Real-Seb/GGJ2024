@@ -15,8 +15,8 @@ MonoBehaviour:
   IdReplique: 9
   text: "Quelle est la capitale du Bhoutan, le pays asiatique situ\xE9 entre l'Inde
     et la Chine ? "
-  repliqueDuration: 5
-  textSpeed: 2
+  repliqueDuration: 3
+  textSpeed: 0.05
   image: {fileID: 0}
   ListReponse:
   - {fileID: 11400000, guid: 934dbab45a0130947bedef2008e9e229, type: 2}
