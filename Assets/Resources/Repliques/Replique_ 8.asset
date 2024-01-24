@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IdReplique: 8
   text: "Quelle est la plus petite plan\xE8te du syst\xE8me solaire ?"
-  repliqueDuration: 5
-  textSpeed: 2
+  repliqueDuration: 4
+  textSpeed: 0.1
   image: {fileID: 0}
   ListReponse:
   - {fileID: 11400000, guid: 7366cd2f33c649a4c9456528b6e1e5e1, type: 2}

@@ -108,7 +108,7 @@ public class DialogueSystem : MonoBehaviour
             texteReplique.text += letter;
             if(GameManager.Instance.hasLost)    
                 break;
-            yield return new WaitForSeconds(typingSpeed * 0.05f);
+            yield return new WaitForSeconds(_replique.textSpeed * 0.05f);
         }
     }
 

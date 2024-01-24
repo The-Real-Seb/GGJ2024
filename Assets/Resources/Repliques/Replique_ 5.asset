@@ -16,7 +16,7 @@ MonoBehaviour:
   text: "Haha, c\u2019est super ! Mais tu ne devrais peut \xEAtre pas \xEAtre aussi
     s\xFBre de toi"
   repliqueDuration: 5
-  textSpeed: 2
+  textSpeed: 0.2
   image: {fileID: 0}
   ListReponse:
   - {fileID: 11400000, guid: 61a80aaa1edd8ef42aaa08b22f041d72, type: 2}
