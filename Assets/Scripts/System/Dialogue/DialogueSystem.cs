@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using TMPro;
+using UnityEditor.Compilation;
 using UnityEngine;
 using UnityEngine.UI;
 using Object = UnityEngine.Object;
@@ -22,7 +23,10 @@ public class DialogueSystem : MonoBehaviour
     private List<Replique> _ListReplique = new List<Replique>();
     private static DialogueSystem instance = null;
     public static DialogueSystem Instance => instance;
-    public AudioSource audioSource;
+
+    public AudioSource lettersAudio;
+    public AudioSource validateBip;
+    public AudioSource missBip;
 
     public List<GameObject> buttonList = new List<GameObject>();
 
@@ -65,6 +69,7 @@ public class DialogueSystem : MonoBehaviour
     {
         if (reponse.win)
         {
+            validateBip.Play();
             buttonList.Clear();
             GameManager.Instance.AddReplique();
             SceneAudioPlayer.Instance.AccelerateMusicSpeed();
@@ -86,6 +91,7 @@ public class DialogueSystem : MonoBehaviour
     {
         foreach (GameObject go in buttonList)
             go.GetComponent<Button>().interactable = false;
+        missBip.Play();
         GameManager.Instance.hasLost = true;
         StartCoroutine(Timer.Instance.GameOver());
     }
@@ -102,9 +108,9 @@ public class DialogueSystem : MonoBehaviour
     {
         foreach (char letter in sentence.ToCharArray())
         {
-            audioSource.Play();
-            float newPitch = Mathf.Clamp(audioSource.pitch, 0.9f, 1.1f);
-            audioSource.pitch = newPitch;
+            lettersAudio.Play();
+            float newPitch = Mathf.Clamp(lettersAudio.pitch, 0.9f, 1.1f);
+            lettersAudio.pitch = newPitch;
             texteReplique.text += letter;
             if(GameManager.Instance.hasLost)    
                 break;
