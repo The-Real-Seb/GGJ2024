@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Replique_ 6
   m_EditorClassIdentifier: 
   IdReplique: 6
-  text: "Ah ouais ? tu te crois malin, hein ? ON VA VOIR \xC7A !!"
+  text: "Ah ouais ? Tu te crois malin, hein ? ON VA VOIR \xC7A !"
   repliqueDuration: 4
   textSpeed: 0.1
   image: {fileID: 0}

@@ -13,9 +13,8 @@ MonoBehaviour:
   m_Name: Replique_ 4
   m_EditorClassIdentifier: 
   IdReplique: 4
-  text: "Super !  Tu sais il se trouve que je suis une femme assez exigeante, je
-    pense que la personne qui pourra partager ma vie doit \xEAtre quelqu\u2019un
-    de cultiv\xE9."
+  text: "Super ! Tu sais il se trouve que je suis une femme assez exigeante, je pense
+    que la personne qui pourra partager ma vie doit \xEAtre quelqu\u2019un de cultiv\xE9."
   repliqueDuration: 6
   textSpeed: 0.3
   image: {fileID: 0}

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7f2ed483b87fcc40aa8845a3eefcc50, type: 3}
   m_Name: Reponse_ 3
   m_EditorClassIdentifier: 
-  win: 0
+  win: 1
   replique: {fileID: 11400000, guid: e8fdc2333c8b68d49bfb2f5942a56fde, type: 2}
   text: Oui ?
   font: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

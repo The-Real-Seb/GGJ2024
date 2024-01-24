@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   win: 0
   replique: {fileID: 11400000, guid: 2d806f7fc89186e43b2c2fcec211658d, type: 2}
-  text: "Nan, c\u2019est pas Pluton : c\u2019est pas une plan\xE8te"
+  text: "Nan, c\u2019est pas Pluton, c\u2019est pas une plan\xE8te"
   font: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

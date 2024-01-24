@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   win: 0
   replique: {fileID: 11400000, guid: 64494e504078ae44b8f3c884200609f8, type: 2}
-  text: "C\u2019est vachement superficiel de juger quelqu\u2019un la dessus !"
+  text: "C\u2019est vachement superficiel de juger quelqu\u2019un l\xE0-dessus !"
   font: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

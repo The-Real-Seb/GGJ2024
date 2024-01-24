@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IdReplique: 5
   text: "Haha, c\u2019est super ! Mais tu ne devrais peut \xEAtre pas \xEAtre aussi
-    s\xFBre de toi"
+    s\xFBr de toi."
   repliqueDuration: 5
   textSpeed: 0.2
   image: {fileID: 0}

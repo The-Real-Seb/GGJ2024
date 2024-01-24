@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   win: 0
   replique: {fileID: 11400000, guid: 6e123bca212b64148980f5dbbdef5ac2, type: 2}
-  text: La lettre B.
+  text: La lettre B
   font: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

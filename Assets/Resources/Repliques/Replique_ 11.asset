@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Replique_ 11
   m_EditorClassIdentifier: 
   IdReplique: 11
-  text: "\xC0 75 d\xE9cimales pr\xE8s, donnez PI ?"
+  text: "\xC0 75 d\xE9cimales pr\xE8s, donne moi PI ?"
   repliqueDuration: 2
   textSpeed: 0.05
   image: {fileID: 0}

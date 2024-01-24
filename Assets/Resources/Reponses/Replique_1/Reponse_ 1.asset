@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   win: 1
   replique: {fileID: 11400000, guid: 91cc1f58e176c9349a06cbd2b9108d1a, type: 2}
-  text: "Bonjour Nicole, Quel joli pr\xE9nom !"
+  text: "Bonjour Nicole, quel joli pr\xE9nom !"
   font: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

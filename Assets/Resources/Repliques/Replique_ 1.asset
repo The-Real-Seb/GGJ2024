@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Replique_ 1
   m_EditorClassIdentifier: 
   IdReplique: 1
-  text: "Ravi de vous rencontrer je m\u2019appelle Nicole"
+  text: "Ravi de vous rencontrer, je m\u2019appelle Nicole."
   repliqueDuration: 9
   textSpeed: 0.6
   image: {fileID: 0}

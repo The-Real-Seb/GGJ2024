@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   win: 0
   replique: {fileID: 11400000, guid: 09e22433770e0d84aa28a59a3f971454, type: 2}
-  text: "Tu Ne DevRaiS Pas \xCAtRe AuSsi suR dE tOi"
+  text: "Tu Ne DevRaiS Pas \xCAtRe AuSsi s\xFBR dE tOi"
   font: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

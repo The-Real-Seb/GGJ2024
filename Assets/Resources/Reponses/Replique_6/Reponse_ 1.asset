@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   win: 0
   replique: {fileID: 11400000, guid: fc080f677bba4e5468879a98e325c8c4, type: 2}
-  text: "Piti\xE9 arr\xEAte j\u2019ai peur !"
+  text: "Piti\xE9 arr\xEAte, j\u2019ai peur !"
   font: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

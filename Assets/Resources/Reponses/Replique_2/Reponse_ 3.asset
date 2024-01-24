@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   win: 0
   replique: {fileID: 11400000, guid: c7d2652aac26fea4681ffd5c5e38b353, type: 2}
-  text: "Je pr\xE9f\xE8re les chiens"
+  text: "Je pr\xE9f\xE8re les chiens."
   font: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
