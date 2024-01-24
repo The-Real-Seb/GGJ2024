@@ -43,7 +43,7 @@ public class Timer : MonoBehaviour
     {
         GameManager.Instance.currentFace.sprite = GameManager.Instance.angryFace;
 
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(3f);
 
         SceneManager.LoadScene("Credits");
     }

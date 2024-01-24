@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(AudioSource))]
 public class SceneAudioPlayer : MonoBehaviour
@@ -31,7 +30,7 @@ public class SceneAudioPlayer : MonoBehaviour
 
 
 
-        public void AccelerateMusicSpeed()
+    public void AccelerateMusicSpeed()
     {
         playbackSpeed = playbackSpeed * SpeedMultiplicator;
         audioSource.pitch = playbackSpeed;

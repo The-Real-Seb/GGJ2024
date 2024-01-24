@@ -1,13 +1,9 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using TMPro;
-using UnityEditor.Compilation;
 using UnityEngine;
 using UnityEngine.UI;
-using Object = UnityEngine.Object;
-using Random = UnityEngine.Random;
 
 public class DialogueSystem : MonoBehaviour
 {
@@ -24,6 +20,7 @@ public class DialogueSystem : MonoBehaviour
     private static DialogueSystem instance = null;
     public static DialogueSystem Instance => instance;
 
+    public AudioSource mainTheme;
     public AudioSource lettersAudio;
     public AudioSource validateBip;
     public AudioSource missBip;
@@ -91,6 +88,7 @@ public class DialogueSystem : MonoBehaviour
     {
         foreach (GameObject go in buttonList)
             go.GetComponent<Button>().interactable = false;
+        mainTheme.Stop();
         missBip.Play();
         GameManager.Instance.hasLost = true;
         StartCoroutine(Timer.Instance.GameOver());

@@ -678,6 +678,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 345676060}
   m_CullTransparentMesh: 1
+--- !u!82 &418027630 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1528994855704889379, guid: 6ff360695f35eed4581391c8f6c0ca53,
+    type: 3}
+  m_PrefabInstance: {fileID: 246730537}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &478314855
 GameObject:
   m_ObjectHideFlags: 0
@@ -1092,9 +1098,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7892466615559865393, guid: b2649c77823826841b9e192fba9cb04b,
         type: 3}
+      propertyPath: m_Pitch
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7892466615559865393, guid: b2649c77823826841b9e192fba9cb04b,
+        type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: e9c9a9679a05dd142a1df991664f5679, type: 3}
+      objectReference: {fileID: 8300000, guid: 91807048170f0424a9f6671e95afe001, type: 3}
     - target: {fileID: 7892466615559865393, guid: b2649c77823826841b9e192fba9cb04b,
         type: 3}
       propertyPath: m_PlayOnAwake
@@ -1350,6 +1361,7 @@ MonoBehaviour:
     type: 3}
   texteReplique: {fileID: 513860594}
   _replique: {fileID: 0}
+  mainTheme: {fileID: 418027630}
   lettersAudio: {fileID: 1694100685}
   validateBip: {fileID: 145217494503484629}
   missBip: {fileID: 706519101}

@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   win: 0
   replique: {fileID: 11400000, guid: 43e9102e58e91f34181aae5db5d71018, type: 2}
-  text: Hein ?
+  text: 42
   font: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
