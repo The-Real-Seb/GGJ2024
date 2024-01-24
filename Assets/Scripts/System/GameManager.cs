@@ -23,7 +23,8 @@ public class GameManager : MonoBehaviour
     public Sprite basicTenue;
     public Sprite cartonTenue;
     public Sprite wineTenue;
-    
+
+    public AudioSource audioSource;
 
     public void AddReplique()
     {
@@ -69,6 +70,7 @@ public class GameManager : MonoBehaviour
             case 6:
                 currentFace.sprite = smilyFace;
                 currentTenue.sprite = cartonTenue;
+                audioSource.Play();
                 break;
             case 9:
                 currentFace.sprite = happyFace;
